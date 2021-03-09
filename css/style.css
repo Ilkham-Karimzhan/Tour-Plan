@@ -13,11 +13,11 @@ body {
   margin: 0 auto;
 }
 
-.header {
+.navbar {
   background-color: #fff;
 }
 
-.header-top {
+.navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +31,7 @@ body {
   padding-bottom: 40px;
 }
 
-.header__search {
+.navbar__search {
   margin-left: 108px;
   margin-right: auto;
 }
