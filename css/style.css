@@ -35,13 +35,13 @@ img {
   padding-bottom: 40px;
 }
 
+.navbar-top-menu-button {
+  display: none;
+}
+
 .navbar__search {
   margin-left: 108px;
   margin-right: auto;
-}
-
-.navbar-menu-button {
-  display: none;
 }
 
 .navbar__bottom {
@@ -494,7 +494,6 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar__menu {
     padding-top: 22px;
@@ -503,6 +502,9 @@ template {
   .navbar__menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    max-width: 340px;
   }
 }
 
@@ -530,6 +532,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
     background-color: #fff;
     border: none;
     cursor: pointer;
