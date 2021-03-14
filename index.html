@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Best Tour Plan - Otel Booking</title>
 </head>
@@ -105,7 +106,30 @@
           <span class="rating__counter">4.5/5</span>
         </div>
       </div>
+      <div class="hotel__grid">
+        <div class="slider">
+                  <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="image/slider.jpg" alt="slider photo"></div>
+            <div class="swiper-slide"><img src="image/slider.jpg" alt="slider photo"></div>
+            <div class="swiper-slide"><img src="image/slider.jpg" alt="slider photo"></div>
+            ...
+          </div>
+          <!-- If we need navigation buttons -->
+          <button class="slider__button slider__button--pref"></button>
+          <button class="slider__button slider__button--next"></button>
+        </div>
+        <!-- /swiper-container -->
+        </div>
+        <!-- /.slider -->
+      </div>
+      <!-- /.hotel__grid -->
     </div>
   </section>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html> 
