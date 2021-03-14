@@ -3,7 +3,11 @@ const swiper = new Swiper('.swiper-container', {
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--pref',
-    prevEl: '.slider-button--next',
-  }
+    nextEl: '.slider__button--next',
+    prevEl: '.slider__button--pref',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
