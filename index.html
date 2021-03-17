@@ -108,24 +108,20 @@
         </div>
       </div>
       <div class="hotel__grid">
-        <div class="slider hotel__slider">
-                  <!-- Slider main container -->
-        <div class="swiper-container">
+        <!-- Slider main container -->
+        <div class="swiper-container hotel-slider hotel__slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img class="swiper__slide-img" src="image/slider.jpg" alt="slider photo"></div>
-            <div class="swiper-slide"><img class="swiper__slide-img" src="image/slider.jpg" alt="slider photo"></div>
-            <div class="swiper-slide"><img class="swiper__slide-img" src="image/slider.jpg" alt="slider photo"></div>
-            ...
+            <div class="swiper-slide hotel__swiper-item"><img class="swiper__slide-img" src="image/slider.jpg" alt="slider photo"></div>
+            <div class="swiper-slide hotel__swiper-item"><img class="swiper__slide-img" src="image/slider.jpg" alt="slider photo"></div>
+            <div class="swiper-slide hotel__swiper-item"><img class="swiper__slide-img" src="image/slider.jpg" alt="slider photo"></div>
           </div>
           <!-- If we need navigation buttons -->
-          <button class="slider__button slider__button--pref"></button>
-          <button class="slider__button slider__button--next"></button>
+          <button class="hotel-slider__button hotel-slider__button--pref"></button>
+          <button class="hotel-slider__button hotel-slider__button--next"></button>
         </div>
         <!-- /swiper-container -->
-        </div>
-        <!-- /.slider -->
         <div class="hotel__right">
           <div class="booking">
             <div class="booking__info">
@@ -167,6 +163,7 @@
         <!-- /.hotel__right -->
       </div>
       <!-- /.hotel__grid -->
+      </div>
     </div>
   </section>
   <section class="newsletter">
@@ -182,6 +179,90 @@
     </div>
     <!-- /.newsletter-wrapper -->
   </section>
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">What people think about us</h2>
+      <div class="swiper-container reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="image/reviews-avatar.jpg" alt="avatar" class="reviews-slider-avatar">
+                <h3 class="reviews-slider__username">Megan Fox</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.review-slide__profile -->
+              <p class="reviews-slider__text">
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+              </p>
+            </div>
+            <!-- /.review-slide__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="image/reviews-avatar-2.jpg" alt="avatar" class="reviews-slider-avatar">
+                <h3 class="reviews-slider__username">Steven Micchal</h3>
+                <span class="reviews-slider__date">Stayed 15 Feb, 2018</span>
+                <div class="reviews-slider__rating">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.review-slide__profile -->
+              <p class="reviews-slider__text">
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+              </p>
+            </div>
+            <!-- /.review-slide__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="image/reviews-avatar-3.jpg" alt="avatar" class="reviews-slider-avatar">
+                <h3 class="reviews-slider__username">Brandin Cold</h3>
+                <span class="reviews-slider__date">Stayed 23 Apr, 2018</span>
+                <div class="reviews-slider__rating">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                  <img src="image/Star.svg" alt="star" class="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.review-slide__profile -->
+              <p class="reviews-slider__text">
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+              </p>
+            </div>
+            <!-- /.review-slide__item -->
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.preview-wrapper -->
+        <button class="reviews-slider__button reviews-slider__button--pre"></button>
+        <button class="reviews-slider__button reviews-slider__button--next"></button>
+      </div>
+      <!-- /.preview-sliders -->
+          </div>
+          <!-- /.container -->
+  </section>
+  <!-- /.previews -->
   <!-- /.newsletter -->
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
