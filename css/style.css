@@ -834,6 +834,8 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  max-width: 240px;
+  overflow: hidden;
 }
 
 .newsletter__title-strong {
