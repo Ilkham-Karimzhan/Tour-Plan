@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   background-color: #F5FAFE;
   color: #333333;
 }
@@ -67,7 +67,7 @@ img {
 
 .navbar__menu-link {
   text-decoration: none;
-  text-tranform: uppercase;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   color: inherit;
@@ -96,7 +96,6 @@ img {
   border: none;
   font-size: 12px;
   line-height: 15px;
-  cursor: pointer;
   outline: none;
 }
 
@@ -506,7 +505,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 16px;
   padding-bottom: 70px;
 }
 
@@ -528,13 +527,16 @@ template {
   margin-top: 4px;
 }
 
-.hotel__info__name {
-  margin-top: 4;
+.hotel__info-name {
+  margin-top: 4px;
   margin-bottom: 0;
 }
 
 .hotel__info-description {
-  margin: 5px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .hotel__name {
@@ -793,6 +795,10 @@ template {
   overflow: hidden;
 }
 
+.swiper-container {
+  margin-left: 0;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -836,10 +842,13 @@ template {
   line-height: 30px;
   max-width: 240px;
   overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .newsletter__title-strong {
   display: block;
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 36px;
   line-height: 45px;
@@ -889,6 +898,7 @@ template {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  margin-top: 0;
 }
 
 .reviews-slider__item {
@@ -988,6 +998,8 @@ template {
   line-height: 15px;
   color: #EC1F46;
   margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 6.5px;
 }
 
 .reviews-slider__date {
@@ -1023,6 +1035,7 @@ template {
   line-height: 30px;
   text-transform: uppercase;
   margin-bottom: 57px;
+  margin-top: 60px;
 }
 
 .activities-wrapper {
