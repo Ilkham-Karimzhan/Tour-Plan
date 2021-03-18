@@ -1116,7 +1116,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel__slider {
     width: 590px !important;
   }
   .hotel__slider-img {
@@ -1162,6 +1162,7 @@ template {
             flex-direction: column;
   }
   .hotel__slider {
+    width: 100% !important;
     margin-bottom: 30px;
   }
   .hotel__right {
@@ -1199,7 +1200,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -1270,7 +1271,7 @@ template {
             flex-direction: column !important;
   }
   .hotel-slider {
-    width: 100%;
+    width: 100% !important;
   }
   .hotel .booking {
     width: 100%;
