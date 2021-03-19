@@ -37,6 +37,10 @@
         background-repeat: no-repeat
         width: 70px
         height: 47px
+      &__text
+        font-size: 12px
+        line-height: 160%
+        text-align: justify
     &__button
       position: absolute
       top: 50%
@@ -52,16 +56,18 @@
       z-index: 99
       &--prev
         background-image: url(../image/arrow-prev-secondary.svg)
-        left: 0
+        left: 2%
+        top: 47%
       &--next
         background-image: url(../image/arrow-next-secondary.svg)
-        right: 0
+        right: 1.5%
+        top: 47%
     &__profile
       display: flex
       flex-direction: column
       align-items: center
       margin-top: -45px
-      margin-bottom: 30px
+      margin-bottom: 35px
     &-avatar
       width: 90px
       height: 90px
@@ -75,7 +81,6 @@
       color: $primary
       margin-bottom: 10px
       margin-top: 0
-      margin-bottom: 6.5px
     &__date
       font-size: 10px
       line-height: 13px
