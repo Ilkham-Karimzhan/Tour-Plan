@@ -18,10 +18,11 @@
   .container, .newsletter__wrapper
     max-width: 700px
   .logo
-    width: 132px
+    width: 104px
   .navbar
-    &__top
-      padding: 30px 0
+    &-top
+      padding-top: 30px !important
+      padding-bottom: 30px !important
     &__search
       margin-left: auto
   .navbar
@@ -35,6 +36,7 @@
     &__input
       max-width: 340px
   .hotel
+    padding-bottom: 60px
     &__grid
       flex-direction: column
     &__slider
@@ -56,14 +58,16 @@
       font-size: 30px
       line-height: 38px
   .activities
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &-card
       margin-bottom: 20px
   .card
     width: 339px
-    height: 245px
+    height: 255px
   .footer
+    padding-top: 73px
     &-wrapper
       grid-row-gap: 40px
       grid-template-columns: repeat(6, 1fr)
@@ -91,6 +95,14 @@
       &-form
         grid-column: span 5
         grid-row: 4
+    &__conditions
+      padding-top: 30px !important
+      flex-direction: column
+      align-items: start
+    &__cards
+      margin-left: 0
+  .newsletter
+    padding: 84px 0 80px 0
 @media   ( max-width: 767px )
   body
     padding-top: 90px
@@ -241,8 +253,6 @@
         line-height: 38px
   .subscribe
     width: 280px
-  .card
-    width: 100%
 @media  ( max-width: 320px )
   .container
     max-width: 280px
@@ -256,6 +266,13 @@
       margin-left: 0
   .subcribe
     width: 100%
+  .reviews
+    &__title
+      width: 245px
+      margin: 0 auto 42px
+    &-slider
+      &__item
+        padding: 0 33px 30px
   .footer
     &-wrapper
       grid-template-columns: 1fr
@@ -275,10 +292,21 @@
     &__legal
       grid-row: 5
       grid-column: 1
+      margin-left: 0
     &__contact
       &-details
         grid-row: 6
         grid-column: 1
+        width: 280px !important
       &-form
         grid-row: 7
         grid-column: 1
+    &__input
+      flex-basis: 65%
+    &__message
+      flex-basis: 75%
+    &__conditions
+      &-list
+        width: 280px
+  .card
+    width: 100%
