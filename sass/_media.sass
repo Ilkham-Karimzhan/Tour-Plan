@@ -92,15 +92,45 @@
         grid-column: span 5
         grid-row: 4
 @media   ( max-width: 767px )
+  body
+    padding-top: 90px
   .container
     max-width: 576px
     width: 92%
   .navbar
-    &__search, &__menu, &__user
+    &--mobile_fixed
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      z-index: 99
+    &__user, &__search
+      &--mobile-hidden
+        display: none
+      &--mobile-visible
+        display: flex
+    &__user
+      flex-direction: column
+      justify-content: space-between
+    &__bottom
       display: none
-
+      position: fixed
+      top: 78px
+      left: 0
+      right: 0
+      bottom: 0
+      padding-top: 30px
+      &--vivible
+        display: block
+    &__menu
+      flex-direction: column
+      &-item
+        margin-bottom: 20px
+        &--mobile
+          &-visible
+            display: block
   .menu
-    &__button
+    &-button
       display: flex
       width: 16px
       height: 11px
@@ -115,6 +145,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .stars
     flex-basis: auto !important
   .hotel
