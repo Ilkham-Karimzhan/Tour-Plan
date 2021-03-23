@@ -22,6 +22,40 @@ iframe {
   width: 100% !important;
 }
 
+.input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+}
+
+.message {
+  height: 125px;
+  width: 540 px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 18px 23px;
+}
+
+.button {
+  min-width: 160px;
+  height: 50px;
+  padding: 18px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -792,7 +826,7 @@ template {
   border: 0;
   background-color: #EC1F46;
   color: #fff;
-  curosor: pointer;
+  cursor: pointer;
 }
 
 .map {
@@ -896,6 +930,7 @@ template {
   color: #fff;
   width: 65px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1277,23 +1312,12 @@ template {
 }
 
 .footer__input {
-  background-color: #fff;
-  border-radius: 4px;
-  border: none;
-  padding: 0 23px;
-  height: 50px;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
 }
 
 .footer__message {
-  height: 125px;
-  width: 540 px;
-  background-color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 18px 23px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
@@ -1301,16 +1325,7 @@ template {
 }
 
 .footer__button {
-  min-width: 160px;
-  height: 50px;
-  padding: 18px;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #fff;
-  background-color: #EC1F46;
-  border: none;
-  border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
@@ -1351,6 +1366,11 @@ template {
   line-height: 15px;
 }
 
+.footer__conditions-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer__cards {
   margin-left: 277px;
 }
@@ -1359,6 +1379,69 @@ template {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background-color: #0A223D;
+  color: #fff;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__close {
+  position: absolute;
+  right: 17px;
+  top: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__message {
+  width: 100%;
+  height: 123px;
+  margin-bottom: 15px;
+}
+
+.modal__info {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+
+.modal__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
