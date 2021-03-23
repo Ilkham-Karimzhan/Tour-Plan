@@ -162,7 +162,7 @@
                 <span class="booking__num">12100</span>
               </a>
             </div>
-            <button data-toggle="modal" class="booking__button button">View Other Optionss</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="booking__button button">View Other Optionss</button>
   
             <!-- /.booking__call-center -->
           </div>
@@ -411,7 +411,7 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
+          <form action="send.php" method="POST" class="form footer__form">
             <input 
             type="text" 
             class="input footer__input"
@@ -443,7 +443,7 @@
       <!-- /.container -->
     </div>
   </footer>
-  <div class="modal">
+  <div class="modal" id="booking-modal">
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
@@ -451,17 +451,24 @@
         <img src="image/modal/close.svg" alt="icon: close">
       </a>
       <h3 class="modal__title footer__title--mb-3">Booking</h3>
-      <form action="send.php" method="POST" class="modal__form">
+      <form action="send.php" method="POST" class="form modal__form">
         <input 
         type="text" 
         class="input modal__input"
         placeholder="Your Full Name*"
         name="name"
-        ><input 
+        >
+        <input 
         type="text" 
         class="input modal__input"
         placeholder="Phone Number*"
         name="phone"
+        >
+        <input 
+        type="text" 
+        class="input modal__input"
+        placeholder="Email*"
+        name="email"
         >
         <textarea placeholder="Message" cols="30" rows="10" class="message modal__message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
