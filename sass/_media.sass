@@ -133,6 +133,7 @@
       right: 0
       bottom: 0
       padding-top: 30px
+      overflow: scroll
       &--vivible
         display: block
     &__menu
@@ -257,8 +258,9 @@
 @media  ( max-width: 320px )
   .container
     max-width: 280px
-  .navbar--mobile_fixed
-    max-width: 320px
+  .navbar
+    &--mobile_fixed
+      max-width: 320px
   .hotel
     &__right
       min-height: 470px
@@ -317,3 +319,6 @@
         width: 280px
   .card
     width: 100%
+  .search
+    &__input
+      max-width: 280px
