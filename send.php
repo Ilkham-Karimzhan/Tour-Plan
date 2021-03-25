@@ -41,14 +41,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'ilkham1Karimov@gmail.com'; // Логин на почте
+    $mail->Username   = 'ilkham1karimov@gmail.com'; // Логин на почте
     $mail->Password   = 'Gmail_mygmail_131199'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('ilkham1Karimov@gmail.com', 'Ильхам Каримов'); // Адрес самой почты и имя отправителяи имя отправителя
+    $mail->setFrom('ilkham1karimov@gmail.com', 'Ильхам Каримов'); // Адрес самой почты и имя отправителяи имя отправителя
 
     // Получатель письма
-    $mail->addAddress('');  
+    $mail->addAddress('ilhamkar00@gmail.com');  
 
 // Отправка сообщения
 if ($email == null) {

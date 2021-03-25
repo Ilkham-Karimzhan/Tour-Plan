@@ -56,4 +56,19 @@ $(document).ready(function(){
     }
   });
   $('.newsletter').parallax({imageSrc: '../image/newsletter.jpg'});
+  ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [7.890730745473269, 98.29478491535427],
+                zoom: 15
+            });
+            var myGeoObject = new ymaps.GeoObject({
+              geometry: {
+                  type: "Point", // тип геометрии - точка
+                  coordinates: [7.890730745473269, 98.29478491535427] // координаты точки
+              }
+            });
+            var myPlacemark = new ymaps.Placemark([7.890730745473269, 98.29478491535427]);
+            myMap.geoObjects.add(myPlacemark);
+        }
 });
