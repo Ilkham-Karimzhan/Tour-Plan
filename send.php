@@ -11,30 +11,23 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-if ($email == null) {
-    $title = "Новое обращение Best Tour Plan";
-    $body = "
-    <h2>Новое обращение</h2>
-    <b>Имя:</b> $name<br>
-    <b>Телефон  :</b> $phone<br><br>
-    <b>Сообщение:</b><br>$message
-    ";
-    $modal = "
-    <h2>Новое обращение</h2>
-    <b>Имя:</b> $name<br>
-    <b>Телефон  :</b> $phone<br><br>
-    <b>Почта клиента для рассылки новостей: $email</b><br>
-    <b>Сообщение:</b><br>$message
-    ";
-} else {
-    $title = "Новое обращение Best Tour Plan";
-    $body = "
-    <h2>Новое обращение</h2>
-    ";
-    $modal = "
-    <h2>Новое обращение</h2><br>
-    <b>Почта клиента для рассылки новостей: $email</b>";
-}
+$title = "Новое обращение Best Tour Plan";
+$body = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон  :</b> $phone<br><br>
+<b>Сообщение:</b><br>$message
+";
+$sendMail = "
+<b>Почта клиента для рассылки новостей: $email</b>
+";
+$modal = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон  :</b> $phone<br><br>
+<b>Почта: $email</b><br>
+<b>Сообщение:</b><br>$message
+";
 
 
 // Настройки PHPMailer
@@ -43,7 +36,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -52,10 +45,10 @@ try {
     $mail->Password   = 'Gmail_mygmail_131199'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('ilkham1Karimov@gmail.com', 'Ильхам Каримов'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('ilkham1Karimov@gmail.com', 'Ильхам Каримов'); // Адрес самой почты и имя отправителяи имя отправителя
 
     // Получатель письма
-    $mail->addAddress('ilhamkar00@gmail.com');  
+    $mail->addAddress('');  
 
 // Отправка сообщения
 if ($email == null) {
@@ -83,3 +76,4 @@ else {$result = "error";}
 
 // Отображение результата
 header ('Location: thankyou.html');
+
