@@ -55,4 +55,5 @@ $(document).ready(function(){
       modalDialog.removeClass('modal__dialog--visible');
     }
   });
+  $('.newsletter').parallax({imageSrc: '../image/newsletter.jpg'});
 });
