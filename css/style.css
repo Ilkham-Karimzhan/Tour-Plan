@@ -1383,6 +1383,10 @@ template {
   cursor: pointer;
 }
 
+.modal {
+  overflow: scroll;
+}
+
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -1407,7 +1411,7 @@ template {
   top: 50%;
   left: 50%;
   max-width: 478px;
-  padding: 33px 88px;
+  padding: 33px 40px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 8px;
@@ -1458,6 +1462,87 @@ template {
   text-transform: uppercase;
   margin-bottom: 15px;
   text-align: center;
+}
+
+.other {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.other__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+
+.other__card {
+  color: #fff;
+}
+
+.other__card-info {
+  max-width: 364px;
+  padding: 46px 21px 30px 43px;
+  background-color: #0A223D;
+}
+
+.other__card-main {
+  max-width: 73 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+}
+
+.other__card-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 27px;
+}
+
+.other__card-text {
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-bottom: 34px;
+}
+
+.other__description {
+  margin-bottom: 34px;
+}
+
+.other__description-text {
+  margin-bottom: 11px;
+}
+
+.other__description-desc {
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 14px;
+}
+
+.other__price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.other__price-pricetag {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.other__price-pricetag--disabled {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: line-through;
 }
 
 @media (max-width: 1200px) {
@@ -1828,6 +1913,10 @@ template {
         -ms-flex-order: 5;
             order: 5;
   }
+  .modal__dialog {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1852,6 +1941,15 @@ template {
   }
   .subscribe {
     width: 280px;
+  }
+  .modal__dialog {
+    padding: 33px 25px;
+  }
+  .modal__input {
+    font-size: 13px;
+  }
+  .modal__button {
+    margin-bottom: 5px;
   }
 }
 
